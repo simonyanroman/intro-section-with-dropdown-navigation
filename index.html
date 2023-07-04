@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+
+      <header>
+        <img id="logo" src="./images/logo.svg" alt="" />
+
+        <button id="openMenu">
+          <img src="./images/icon-menu.svg" alt="" />
+        </button>
+      </header>
+
+      <menu class="sideMenu">
+        <nav class="navbar">
+          <button id="closeMenu">
+            <img src="./images/icon-close-menu.svg" alt="" />
+          </button>
+
+          <ul class="navbarList">
+            <li>
+              <button class="dropdownListButton">
+                <p>Features</p>
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </button>
+
+              <ul class="dropdownList">
+                <li class="dropdownListItem">
+                  <img id="listItemLogo" src="./images/icon-todo.svg" alt="" />
+                  <p>Todo List</p>
+                </li>
+                <li class="dropdownListItem">
+                  <img
+                    id="listItemLogo"
+                    src="./images/icon-calendar.svg"
+                    alt=""
+                  />
+                  <p>Calendar</p>
+                </li>
+                <li class="dropdownListItem">
+                  <img
+                    id="listItemLogo"
+                    src="./images/icon-reminders.svg"
+                    alt=""
+                  />
+                  <p>Reminders</p>
+                </li>
+                <li class="dropdownListItem">
+                  <img
+                    id="listItemLogo"
+                    src="./images/icon-planning.svg"
+                    alt=""
+                  />
+                  <p>Planning</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="dropdownListButton">
+                <p>Company</p>
+                <img src="./images/icon-arrow-down.svg" alt="" />
+              </button>
+
+              <ul class="dropdownList">
+                <li><p>History</p></li>
+                <li><p>Our Team</p></li>
+                <li><p>Blog</p></li>
+              </ul>
+            </li>
+            <li><p>Careers</p></li>
+            <li><p>About</p></li>
+          </ul>
+        </nav>
+
+        <div class="authentification">
+          <button id="login"><p>Login</p></button>
+          <button id="register"><p>Register</p></button>
+        </div>
+      </menu>
+
+      <main>
+        <div class="heroImageContainer">
+          <img id="heroImage" src="./images/image-hero-mobile.png" alt="" />
+        </div>
+
+        <div class="descriptionContainer">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button id="callToAction"><h2>Learn more</h2></button>
+        </div>
+      </main>
+
+      <footer>
+        <img id="partnerLogo" src="./images/client-databiz.svg" alt="" />
+        <img id="partnerLogo" src="./images/client-audiophile.svg" alt="" />
+        <img id="partnerLogo" src="./images/client-meet.svg" alt="" />
+        <img id="partnerLogo" src="./images/client-maker.svg" alt="" />
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
