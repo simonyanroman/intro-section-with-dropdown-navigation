@@ -183,7 +183,7 @@ header {
 
   background-color: white;
 
-  transition: translate 0.25s ease-in-out;
+  transition: translate 0.15s ease-in-out;
 
   z-index: 5;
 }
@@ -230,6 +230,19 @@ header {
 
   margin-left: 1.5rem;
   padding-top: 1.5rem;
+
+  animation: enter 0.15s ease-in;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 
 .active {
